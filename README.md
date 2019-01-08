@@ -2,6 +2,8 @@
 This repository will have all my AI (Artificial intelligence) for SDR Radio.
 This project will have all my code for testing some of the AI concepts.<br>
 This will include Python code and shell scripts for Python 2.7 and 3.6
+#Project Status
+All my testing scrips will be here.<br>
 # Installing voice recognition.
 pip install SpeechRecognition<br>
 # Testing voice recognition.
@@ -12,5 +14,7 @@ Set minimum energy threshold to 62.43497342075616
 Say something!
 Got it! Now to recognize it...
 You said hello
-
-
+# Testing sdr reseption.
+sudo ./test_fm_sdr.sh
+# Testing Voice Regocnition with rtl
+test_voice_recognition_with_rtl.sh
