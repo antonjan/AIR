@@ -22,4 +22,14 @@ test_voice_recognition_with_rtl.sh<br>
 This script will tune to a local FM radio stastion and will start decoding the voice of the presenters.<br>
 # Generating voice from text to replay to Voice commands over radio.
 This script will generatio voice from text to reply to Voice Recognition commands.<br>
-
+# Text to Speach (gTTs)
+Installing the gTTs library.<br>
+sudo pip install gTTS==1.0.2<br>
+# Testing the text to Speach.
+Creating a Hello mp3<br>sudo pip install gTTS
+gtts-cli.py -t “Hello” -l ‘en’ hello.mp3
+gtts-cli 'hello' | play -t mp3 -
+# Creating a voice assystint
+I am using javis https://github.com/ajminich/Jarvis<br>
+Here is an exsample of personal system<br>
+sudo python3 ./persanal_asistant.py

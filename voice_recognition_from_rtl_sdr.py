@@ -149,7 +149,6 @@ def process(samples: SampleStream, sdr: RtlSdr) -> None:
 
 
 
-
 def read_callback(samples, rtl_sdr_obj):
 
     process(samples, rtl_sdr_obj)
