@@ -26,10 +26,21 @@ This script will generatio voice from text to reply to Voice Recognition command
 Installing the gTTs library.<br>
 sudo pip install gTTS==1.0.2<br>
 # Testing the text to Speach.
-Creating a Hello mp3<br>sudo pip install gTTS
-gtts-cli.py -t “Hello” -l ‘en’ hello.mp3
-gtts-cli 'hello' | play -t mp3 -
+Creating a Hello mp3<br>sudo pip install gTTS<br>
+gtts-cli.py -t “Hello” -l en hopen websiteello.mp3<br>
+gtts-cli 'hello' | play -t mp3 -<br>
+Testing creating mp3 python3<br>
+python3 ./creating_hello_mp3.py
 # Creating a voice assystint
 I am using javis https://github.com/ajminich/Jarvis<br>
 Here is an exsample of personal system<br>
 sudo python3 ./persanal_asistant.py
+Comands that can be used<br>
+1) open reddit
+2) open website
+3) what\'s up
+4) joke
+5) current weather in .....
+6) weather forecast in ....
+7) email ....
+8) 
