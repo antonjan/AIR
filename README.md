@@ -24,7 +24,7 @@ This script will tune to a local FM radio stastion and will start decoding the v
 This script will generatio voice from text to reply to Voice Recognition commands.<br>
 # Text to Speach (gTTs)
 Installing the gTTs library.<br>
-sudo pip install gTTS==1.0.2<br>
+sudo pip install gTTS<br>
 # Testing the text to Speach.
 Creating a Hello mp3<br>sudo pip install gTTS<br>
 gtts-cli.py -t “Hello” -l en hopen websiteello.mp3<br>
@@ -33,14 +33,48 @@ Testing creating mp3 python3<br>
 python3 ./creating_hello_mp3.py
 # Creating a voice assystint
 I am using javis https://github.com/ajminich/Jarvis<br>
+prerequ
+certifi==2017.11.5
+chardet==3.0.4
+gTTS==1.2.2
+gTTS-token==1.1.1
+idna==2.6
+mpg123==0.4
+PyAudio==0.2.11
+pytz==2017.3
+requests==2.18.4
+SpeechRecognition==3.8.1
+urllib3==1.22
+beautifulsoup4==4.6.0
+weather-api==0.0.4
 Here is an exsample of personal system<br>
-sudo python3 ./persanal_asistant.py
+sudo python3 ./persanal_asistant.py<br>
 Comands that can be used<br>
-1) open reddit
-2) open website
-3) what\'s up
+1) open reddit<br>
+2) open website<br>
+3) what\'s up<br>
 4) joke
 5) current weather in .....
 6) weather forecast in ....
 7) email ....
-8) 
+8)
+# Creating Google api keys
+1. Sign Up for a Free Tier Account
+
+Google Cloud offers a Free Tier plan, which will be used in this tutorial. An account is required to get an API key.
+2. Generate an API Key
+
+Follow these steps to generate an API key:
+
+    Sign-in to Google Cloud Console
+    Click “API Manager”
+    Click “Credentials”
+    Click “Create Credentials”
+    Select “Service Account Key”
+    Under “Service Account” select “New service account”
+    Name service (whatever you’d like)
+    Select Role: “Project” -> “Owner”
+    Leave “JSON” option selected
+    Click “Create”
+    Save generated API key file
+    Rename file to api-key.json
