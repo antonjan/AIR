@@ -34,7 +34,13 @@ def myCommand():
     try:
         command = r.recognize_google(audio).lower()
         print('You said: ' + command + '\n')
-
+        text_to_speech = gTTS(text="hello 123 its working", lang='en')
+        text_to_speech.save('./audio.mp3')
+        #os.system('mpg123 audio.mp3')
+        #tts.save('response_donna.mp3')
+    # We are using Alsa as output to play the MP3
+        os.system('mpg321 -o alsa audio.mp3')
+    #    os.remove('audio.mp3')
     #loop back to continue to listen for commands if unrecognizable speech is received
     except sr.UnknownValueError:
         print('Your last command couldn\'t be heard')

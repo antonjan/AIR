@@ -26,13 +26,19 @@ This script will generatio voice from text to reply to Voice Recognition command
 Installing the gTTs library.<br>
 sudo pip install gTTS<br>
 # Testing the text to Speach.
+Text to speech without internet connection (using pyttsx3)<br>
+Text to speech having internet connection (using gTTS)<br>
+
 Creating a Hello mp3<br>sudo pip install gTTS<br>
 gtts-cli.py -t “Hello” -l en hopen websiteello.mp3<br>
 gtts-cli 'hello' | play -t mp3 -<br>
 Testing creating mp3 python3<br>
 python3 ./creating_hello_mp3.py
 # Creating a voice assystint
-I am using javis https://github.com/ajminich/Jarvis<br>
+sudo apt-get install -qq python python-dev python-pip build-essential swig libpulse-dev
+sudo pip install pocketsphinx
+sudo apt-get install mpg321
+Reqierd libraries<br>
 prerequ
 certifi==2017.11.5
 chardet==3.0.4
@@ -66,7 +72,7 @@ Google Cloud offers a Free Tier plan, which will be used in this tutorial. An ac
 
 Follow these steps to generate an API key:
 
-    Sign-in to Google Cloud Console
+    Sign-in to Google Cloud Console https://console.cloud.google.com
     Click “API Manager”
     Click “Credentials”
     Click “Create Credentials”
