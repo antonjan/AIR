@@ -142,8 +142,9 @@ def process(samples: SampleStream, sdr: RtlSdr) -> None:
 
     audio_signal = np.int16(14000 * audio_signal)
 
-
-
+#send audio to sound cart
+    audio_output.write(audio_signal.astype("int16").tobytes())
+#send audio to stream
     stream_audio(audio_signal.astype("int16").tobytes())
 
 
@@ -193,9 +194,9 @@ sdr = RtlSdr()
 
 #sdr.rs = 2400000
 
-sdr.rs = 1024000
+#sdr.rs = 1024000
 
-#sdr.rs = 240000
+sdr.rs = 960000 
 
 sdr.fc = args.freq
 
