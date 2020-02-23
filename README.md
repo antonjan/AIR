@@ -5,16 +5,16 @@ This will include Python code and shell scripts for Python 2.7 and 3.6
 #Project Status
 All my testing scrips will be here.<br>
 # Installing voice recognition.
-sudo apt-get install rtl-sdr
-sudo apt-get install librtl-dev
-sudo apt-get install rtl-sdr
+sudo apt-get install rtl-sdr<br>
+sudo apt-get install librtl-dev<br>
+sudo apt-get install rtl-sdr<br>
 sudo -H pip install SpeechRecognition<br>
-sudo -H pip3 install speech_recognition
-python -m pip install pyaudio
-sudo -H pip install pyrtlsdr
-sudo -H pip3 install pyrtlsdr
-sudo -H pip3 install scipy
-sudo -H pip install scipy
+sudo -H pip3 install speech_recognition<br>
+python -m pip install pyaudio<br>
+sudo -H pip install pyrtlsdr<br>
+sudo -H pip3 install pyrtlsdr<br>
+sudo -H pip3 install scipy<br>
+sudo -H pip install scipy<br>
 # Testing voice recognition.
 python -m speech_recognition<br>
 Sy somthing on Microphone and you should see the resultd on screen.<br>
